@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Équation Premier Degré</title>
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <div class="content">
+                <input type="number" id="a" placeholder="Saisissez le numéro (a)">
+                <input type="number" id="b" placeholder="Saisissez le numéro (b)">
+                <input type="number" id="c" placeholder="Saisissez le numéro (c)">
+            </div>
+            <div class="content">
+                <button type="button" id="resoudre" onclick="res()">Résoudre</button>
+            </div>
+            <div class="content">
+                <p id="resultat">Resultat</p>
+            </div>
+        </form>
+    </div>
+    
+    <div class="container">
+        <h1>Problème</h1>
+        <h4>Instructions</h2>
+        <ul>
+            <li>Demande à l'utilisateur de saisir les nombres aa, bb et cc.
+            </li>
+            <li>Affiche l'équation ax+b=c ax+b=c dont l'utilisateur a saisi les coefficients.
+            </li>
+            <li>Calcule puis affiche la solution ss de l'équation.
+            </li>
+        </ul>
+        <h4>Rappel mathématique</h4>
+        <div class="content-formule">
+            <p class="formule">ax+b=c   ⟹  x=c-b/a</p>
+        </div>
+        <h4>Exemple</h4>
+        <div class="content-exemple">
+            <div class="exemple">
+                <h5>Données</h5>
+                <ul>
+                    <li>a = 3</li>
+                    <li>b = 5</li>
+                    <li>c = 17</li>
+                </ul>
+            </div>
+            <div class="exemple">
+                <h5>Remplacement</h5>
+                <p>3x+5=17 = 3x+5=17</p>
+            </div>
+            <div class="exemple">
+                <h5>Solution</h5>
+                <p>s=(17-5)/3=4 = s=(17-5)/3=4.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
